@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --brown-color: #4F3402;
+    --dark-brown-color: #271702;
+    --orange-dark: #db920a;
+    --white-color: rgb(255, 255, 255);
+    --box-shadow-1: 0px 0px 20px #21160154;
+    --transition-1: all 0.7s ease-in-out;
+    --gradient-1: linear-gradient(to right, #b97b09, #4F3402);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Header Main Container start here */
+
+.header-fixed-container {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.header-main-container {
+    position: relative;
+    padding: 30px 0px;
+    margin-top: 15px;
+}
+
+.header-logo-container {
+    position: absolute;
+    top: 0px;
+    background: white;
+    right: 85%;
+    top: 1rem;
+    bottom: 10%;
+    left: 5%;
+    box-shadow: var(--box-shadow-1);
+}
+
+.header-logo-container .img-header {
+    max-width: 70%;
+    padding: 15px;
+}
+
+.header-main-container img {
+    width: 100%;
+    height: auto;
+}
+
+.menu-container {
+    background: var(--orange-dark);
+    padding: 30px 200px 30px 0px;
+    text-align: right;
+}
+
+.menu-container nav a {
+    color: var(--dark-brown-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0px 10px;
+    transition: var(--transition-1);
+}
+
+.menu-container nav a:hover {
+    color: var(--white-color);
+    font-size: 1rem;
+    letter-spacing: 5px;
+    padding: 10px 20px;
+    border-bottom: solid 1px var(--dark-brown-color);
+}
+
+
+/* Header Main Container Ends here */
+
+.hero {
+    text-align: center;
+    background-image: url(/images/home_image.webp);
+    min-height: 100vh;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    padding: 70px 0px;
+}
+
+.hero-content h4 {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    color: var(--white-color);
+    font-weight: 300;
+    letter-spacing: 7px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+    color: var(--white-color);
+    font-weight: 900;
+}
+
+.hero-content-button {
+    border: none;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.hero-content-button .btn {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1rem;
+    background: var(--orange-dark);
+    padding: 15px 40px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: var(--transition-1);
+}
+
+.hero-content-button .btn:hover {
+    background: var(--gradient-1);
+    color: var(--white-color);
+    box-shadow: var(--box-shadow-1);
+    border-radius: 20px;
+}
+
+.hero-content-button .btn2 {
+    background: var(--white-color);
+    color: var(--brown-color);
+    box-shadow: var(--box-shadow-1);
+}
+
+.hero-content-button .btn2:hover {
+    background: var(--orange-dark);
+    color: var(--white-color);
+    box-shadow: var(--box-shadow-1);
+    border-radius: 20px;
+}
+
+
+/*About Us Design start here*/
+
+.about {
+    padding-bottom: 80px;
+    background: white;
+    box-shadow: var(--box-shadow-1);
+}
+
+.about-container {
+    background: var(--white-color);
+    margin: -100px 150px 0px;
+    box-shadow: var(--box-shadow-1);
+}
+
+.about-top h5 {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+}
+
+.about-container .about-top {
+    background: var(--orange-dark);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+}
+
+.about-top .btn {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1rem;
+    background: var(--brown-color);
+    padding: 15px 40px;
+    text-transform: uppercase;
+    font-weight: 400;
+    cursor: pointer;
+    transition: var(--transition-1);
+}
+
+.about-top .btn:hover {
+    background: var(--gradient-1);
+    color: var(--white-color);
+    box-shadow: var(--box-shadow-1);
+    border-radius: 20px;
+}
+
+.about-buttom {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 60px;
+    cursor: pointer;
+}
+
+.about-buttom .about-button-box {
+    margin: 0px 10px;
+    border: #211601 solid 1px;
+    padding: 10px 20px;
+}
+
+.about-button-box h1 {
+    font-size: 1.5rem;
+    margin: -15px 0px -10px;
+    padding: 0;
+    color: var(--brown-color);
+    font-weight: 900;
+}
+
+.about-button-box p {
+    font-size: .9rem;
+    color: var(--dark-brown-color);
+    font-weight: 400;
+}
+
+
+/** Services Design Start here **/
+
+.services {
+    background-image: linear-gradient(#ffffff2a, #ffffff), url(/images/services_background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0px;
+    margin-top: 100px;
+}
+
+.service-box:hover {
+    transform: scale(0.9) rotateX(360deg);
+    transition: var(--transition-1);
+}
+
+.services-top h5 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.services-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    gap: 30px;
+    margin: 10px 60px;
+}
+
+.service-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-box .text-box {
+    background: var(--brown-color);
+    padding: 20px 0px;
+    width: 70%;
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--white-color);
+    font-weight: 900;
+    line-height: 2rem;
+}
+
+.service-box .img-box {
+    width: 30%;
+    border: solid 3px var(--white-color);
+}
+
+.service-box .img-box img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+
+
+/* Services Design End here */
+
+.main-container {
+    background-image: url(/images/footer_background.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 50px 0px;
+    margin: 150px 0px -100px;
+}
+
+.footer-inner-container {
+    background: var(--dark-brown-color);
+    padding: 40px;
+    margin: 50px 40px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 100px;
+}
+
+.footer-box {
+    color: white;
+    width: 30%;
+    padding: 30px 40px;
+}
+
+.footer1 img {
+    width: 40%;
+    margin-bottom: -10px;
+}
+
+.footer2 h6 {
+    font-size: .8rem;
+    font-weight: 500;
+    margin-bottom: -15px;
+}
+
+.footer2 h2 {
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.footer2 h5 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--orange-dark);
+    margin-bottom: -15px;
+}
+
+.footer2 h4 {
+    font-size: .8rem;
+    font-weight: 500;
+    margin-top: -10px;
+}
+
+hr {
+    border: solid 1px var(--orange-dark);
+    margin: 20px 0px;
+    width: 70%;
+}
+
+.footer5 h4 {
+    font-size: 1rem;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.footer5 .btn {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: .9rem;
+    background: var(--orange-dark);
+    padding: 15px 40px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: var(--transition-1);
+}
+
+.footer5 .btn:hover {
+    font-size: .8rem;
+    background: var(--gradient-1);
+    color: var(--white-color);
+    box-shadow: var(--box-shadow-1);
+    border-radius: 20px;
+}
+
+.footer6 h4 {
+    font-weight: 400;
+    font-size: .8rem;
+}
+
+.footer-6-social {
+    display: flex;
+    gap: 11px;
+    cursor: pointer;
+}
+
+.social-each {
+    padding: 10px 15px;
+    border: solid 1px var(--white-color);
+    border-radius: 50px;
+    transition: var(--transition-1);
+}
+
+.social-each:hover {
+    background: var(--orange-dark);
+    color: var(--white-color);
+    box-shadow: var(--box-shadow-1);
+    transition: var(--transition-1);
+}
+
+.footer-box i {
+    color: var(--orange-dark);
+    font-size: 1rem;
+}
+
+.social-each:hover i {
+    color: var(--white-color);
+}
+
+.footer7 h6 {
+    font-size: .8rem;
+    font-weight: 500;
+    color: var(--white-color);
+    letter-spacing: 1px;
+}
+
+.footer7 h5 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--white-color);
+    letter-spacing: 2px;
+    margin: -25px 0px
+}
+
+.footer7 h6 a {
+    font-size: .8rem;
+    font-weight: 800;
+    color: var(--orange-dark);
+    letter-spacing: 1px;
+    text-decoration: none;
+}
